@@ -1,1 +1,1 @@
-web: dotnet exec ./TestCoreAPPlication1.dll --urls http://0.0.0.0:5000/
+web: dotnet exec ./WebAWSCoreApplication.dll --urls http://0.0.0.0:5000/
