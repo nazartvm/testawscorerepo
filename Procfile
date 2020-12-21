@@ -1,0 +1,1 @@
+web: dotnet exec ./TestCoreAPPlication1.dll --urls http://0.0.0.0:5000/
