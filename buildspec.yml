@@ -24,11 +24,10 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -o ./build_output ./${PROJECT}/${PROJECT}.csproj
-      - cp Procfile ./build_output
+      - dotnet publish ./${PROJECT}/${PROJECT}.csproj -o ./staging/app
+      - cp ./${PROJECT}/aws-windows-deployment-manifest.json ./${PROJECT}/staging/.
 
 artifacts:
   files:
     - '**/*'
-  base-directory: ./build_output
-  discard-paths: no
+  base-directory: ./${PROJECT}/staging'
