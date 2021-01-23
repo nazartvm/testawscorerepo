@@ -25,9 +25,9 @@ phases:
     commands:
       - echo Publish started on `date`
       - dotnet publish ./${PROJECT}/${PROJECT}.csproj -o ./staging/app
-      - cp ./aws-windows-deployment-manifest.json ./${PROJECT}/staging/.
+      - cp ./aws-windows-deployment-manifest.json ./staging/.
 
 artifacts:
   files:
     - '**/*'
-  base-directory: ./${PROJECT}/staging'
+  base-directory: ./staging'
