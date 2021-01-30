@@ -4,7 +4,7 @@
         "aspNetCoreWeb": [{
                 "name": "WebAWSCoreApplication",
                 "parameters": {
-                    "appBundle": "./site",
+                    "appBundle": "./build_output",
                     "iisPath": "/",
                     "iisWebSite": "Default Web Site"
                 }
